@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contest Final Rankings</title>
+    <title>Contest Rankings</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,7 +42,8 @@
     <header>
         <h1>Contest Final Rankings</h1>
         <p>Contest Name: MATH2020_GRAPH</p>
-        <p>Date: 28/12/2023 </p>
+        <p id="date">Date: 28/12/2023 </p>
+        <p>(Rank is updated 2 times everyday, at 0h and 23h59)</p>
     </header>
 
     <table>
@@ -69,6 +70,9 @@
     <div class="footer">
         <p>Thank you for participating in the contest!</p>
     </div>
-
+<script>
+const d = new Date();
+document.getElementById("date").innerHTML = d;
+</script>
 </body>
 </html>
