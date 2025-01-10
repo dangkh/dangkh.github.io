@@ -1,11 +1,11 @@
 ---
-title: "Paper Title Number 4"
+title: "Mi-CGA: Cross-modal Graph Attention Network for robust emotion recognition in the presence of incomplete modalities"
 collection: publications
-permalink: /publication/2024-02-17-paper-title-number-4
+permalink: /publication/title-number-4
 excerpt: 'This paper is about fixing template issue #693.'
 date: 2024-02-17
 venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0925231225000141'
 citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
 ---
 

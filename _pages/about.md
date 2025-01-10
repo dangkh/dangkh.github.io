@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi, my name is Kieu Hai Dang. This is my personal webpage"
+title: "Hi, DangKH is here. This is my personal webpage :D"
 author_profile: true
 redirect_from: 
   - /about/
