@@ -12,67 +12,42 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Hai Dang Kieu</div>
+    <div class="text-3xl py-3 font-bold">PhD student in Computer Science at VinUniversity</div>
     <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
-    </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+      <ul class="list-disc list-inside text-lg space-y-1">
+        <li>🎯 Recommender Systems (News, Sequential, Multimodal)</li>
+        <li>🧠 Graph Neural Networks & Knowledge Graphs</li>
+        <li>📚 Generative Models (LLMs, Prompting)</li>
+      </ul>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">My last Publication {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Enhancing News Recommendation with Hierarchical LLM Prompting @ WWW 2025"
+    img="/Picture1.png"
+    desc="Personalized news recommendation systems often struggle to effectively capture the complexity of user preferences, as they rely heavily on shallow representations, such as article titles and abstracts. To address this problem, we introduce a novel method, namely PNR-LLM, for Large Language Models for Personalized News Recommendation. Specifically, PNR-LLM harnesses the generation capabilities of LLMs to enrich news titles and abstracts, and consequently improves recommendation quality. PNR-LLM contains a novel module, News Enrichment via LLMs, which generates deeper semantic information and relevant entities from articles, transforming shallow contents into richer representations. We further propose an attention mechanism to aggregate enriched semantic- and entity-level data, forming unified user and news embeddings that reveal a more accurate user-news match"
     url="#"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Keyword-driven Retrieval-Augmented Large Language Models for Cold-start User Recommendations"
+    img="/Picture2.png"
+    desc="Recent advancements in Large Language Models (LLMs) have shown significant potential in enhancing recommender systems. However, addressing the cold-start recommendation problem, where users lack historical data, remains a considerable challenge. In this paper, we introduce KALM4Rec (Keyword-driven Retrieval-Augmented Large Language Models for Cold-start User Recommendations), a novel framework specifically designed to tackle this problem by requiring only a few input keywords from users in a practical scenario of cold-start user recommendations. KALM4Rec operates in two main stages: candidates retrieval and LLM-based candidates re-ranking. In the first stage, keyword-driven retrieval models are used to identify potential candidates, addressing LLMs' limitations in processing extensive tokens and reducing the risk of generating misleading information. In the second stage, we employ …"
     url="#"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Mi-CGA: Cross-modal Graph Attention Network for robust emotion recognition in the presence of incomplete modalities"
+    img="/graph.jpg"
+    desc="Multimodal Emotion Recognition in Conversation (Multimodal ERC) is crucial for understanding human communication across various applications. However, the challenge of missing modalities impedes the development of robust models. Existing approaches often overlook scenarios where multiple modalities are absent simultaneously and fail to explore deep semantic interactions between modalities. Additionally, learning high-dimensional interactive features from limited samples is challenging due to missing data. This paper proposes Mi-CGA, a framework tailored for incomplete multimodal learning in conversational contexts. Mi-CGA comprises two main components: Incomplete Multimodal Representation (IMR) and Cross-modal Graph Attention Network (CGA-Net). IMR simulates incomplete modalities, while CGA-Net extracts rich information from conversational graphs. CGA-Net consists of three key …"
     url="#"
     badge="FOSS"
   />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
+

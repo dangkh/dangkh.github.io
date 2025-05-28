@@ -9,11 +9,22 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
+  <p>
+    I am currently a PhD student at <strong>VinUniversity</strong>, starting in 2023, under the supervision of <strong>Dr. Le Duy Dung</strong> and <strong>Prof. Wray Buntine</strong>. My research focuses on:
+  </p>
+  <ul class="list-disc ml-6 mt-2">
+    <li>🎯 Recommender Systems</li>
+    <li>🧠 Graph Neural Networks & Knowledge Graphs</li>
+    <li>📚 Generative Models (LLMs, Prompting)</li>
+  </ul>
+  <p class="mt-4">
+    Prior to this, I completed my undergraduate and master’s degrees at <strong>VNU - University of Engineering and Technology (UET)</strong>. I also spent one year as a researcher at <strong>Bournemouth University, UK</strong>, working on motion reconstruction for cultural heritage preservation.
+  </p>
+  <p class="mt-4">
+    In the coming year, I will join <strong>University of Technology Sydney (UTS)</strong> as a visiting PhD student, working with <strong>Prof. Min Xu</strong> and <strong>Prof. Qiang Wu</strong>.
+  </p>
+</div>
+
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
@@ -21,12 +32,16 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Bachelor in Computer Science, "
+      subtitle="2013 to 2017 at University of Engineering and Technology, VNU. Hanoi-Vietnam"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Master in Computer Science"
+      subtitle="2017 to 2021 at University of Engineering and Technology, VNU. Hanoi-Vietnam"
+    />
+    <TimeLineElement
+      title="PhD in Computer Science"
+      subtitle="2023 at VinUniversity. Hanoi-Vietnam"
     />
   </div>
 
@@ -36,57 +51,52 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+  title="PhD Student - Research Assistant on Multimodal Generative Recommendation"
+  subtitle="From August 2023 to Present at VinUniversity, Vietnam"
+>
+  Research project on integrating generative models (LLMs, diffusion models) with multimodal data to improve recommendation systems. Focus on designing frameworks that unify these models with traditional multimodal architectures to enhance relevance and accuracy across domains.
+</TimeLineElement>
+
+<TimeLineElement
+  title="Teaching Assistant - Data Structure, Algorithms & Advanced Programming"
+  subtitle="From April 2017 to Present at University of Engineering and Technology (UET), Hanoi, Vietnam"
+>
+  Responsibilities include conducting tutorials, grading assignments and exams, and supporting students in core computer science courses.
+</TimeLineElement>
+
+<TimeLineElement
+  title="Researcher - AI-based Communication for Disabled People"
+  subtitle="From April 2020 to May 2023 at UET, Vietnam (Funded by VINIF)"
+>
+  Developed an application to record and synchronize EEG, eye-tracking signals, and videos. Designed and implemented personalization algorithms for brain-computer interface (BCI) systems aiding communication for disabled users.
+</TimeLineElement>
+
+<TimeLineElement
+  title="Visiting Researcher - AniAge Project"
+  subtitle="From April 2019 to March 2020 at Bournemouth University, UK"
+>
+  Contributed to the EU H2020 AniAge project on cultural heritage animation. Developed and implemented algorithms to reconstruct missing 3D joints in human motion data.  
+  [Project Link](https://www.euh2020aniage.org/)
+</TimeLineElement>
+
+<TimeLineElement
+  title="Researcher - Vision-based Deep RL for Unmanned Systems"
+  subtitle="From April 2017 to April 2019 at UET, Vietnam"
+>
+  Worked on a vision-based recognition system using deep reinforcement learning for unmanned vehicles. Developed simulated environments in ROS and designed algorithms for visual navigation and path-finding.
+</TimeLineElement>
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc md:columns-1 columns-1 mx-6">
+    <li>Data structure and Alorithgm Design</li>
+    <li>C++</li>
+    <li>Python</li>
+    <li>LLMs Prompting</li>
+
   </ul>
 </BaseLayout>
