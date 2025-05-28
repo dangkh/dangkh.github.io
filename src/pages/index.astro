@@ -10,22 +10,29 @@ const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Hai Dang Kieu</div>
-    <div class="text-3xl py-3 font-bold">PhD student in Computer Science at VinUniversity</div>
-    <div class="py-2">
-      <ul class="list-disc list-inside text-lg space-y-1">
-        <li>🎯 Recommender Systems (News, Sequential, Multimodal)</li>
-        <li>🧠 Graph Neural Networks & Knowledge Graphs</li>
-        <li>📚 Generative Models (LLMs, Prompting)</li>
-      </ul>
-    </div>
+  <div class="flex flex-col md:flex-row items-center justify-between bg-[#f7f9fb] text-black px-6 py-12 rounded-lg shadow-md">
+  <!-- Text Section -->
+  <div class="md:w-2/3">
+    <div class="text-xl mb-2">Hey there 👋</div>
+    <div class="text-5xl font-bold mb-3">I'm Hai Dang Kieu</div>
+    <div class="text-2xl font-semibold mb-4">PhD student in Computer Science at VinUniversity</div>
+    <ul class="list-disc list-inside text-lg space-y-1">
+      <li>🎯 Recommender Systems (News, Sequential, Multimodal)</li>
+      <li>🧠 Graph Neural Networks & Knowledge Graphs</li>
+      <li>📚 Generative Models (LLMs, Prompting)</li>
+    </ul>
   </div>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last Publication {"</>"}</div>
+  <!-- Image Section -->
+  <div class="md:w-1/3 mt-8 md:mt-0 flex justify-center">
+    <img src="/logo2.png" alt="VinUniversity Logo" class="max-w-[250px] h-auto" />
   </div>
+</div>
+
+
+<div class="mt-16">
+  <div class="text-3xl w-full font-bold mb-2">My last Publication {"</>"}</div>
+</div>
 
   <HorizontalCard
     title="Enhancing News Recommendation with Hierarchical LLM Prompting"
