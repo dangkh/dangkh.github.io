@@ -4,120 +4,65 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5">Publications</div>
+  <section class="py-12">
+  <!-- Section Title -->
+  <div class="mb-8">
+    <h2 class="text-4xl font-bold text-gray-800 mb-2">Projects</h2>
+    <p class="text-lg text-gray-600">
+      These are the projects where I play a key role in design and development.
+    </p>
   </div>
 
+  <!-- Project Introduction Box -->
+  <div class="flex flex-col md:flex-row items-center justify-between bg-[#f7f9fb] text-black px-6 py-4 rounded-lg shadow-md mb-8">
+    <p class="text-base font-medium">
+      I actively contribute to interdisciplinary projects combining recommender systems, LLMs, and graph-based models.
+    </p>
+  </div>
+
+
+  
+
   <HorizontalCard
-    title="Enhancing News Recommendation with Hierarchical LLM Prompting @ WWW 2025"
-    img="/Picture3.png"
-    desc="Hai-Dang Kieu, Delvin Ce Zhang, Minh Duc Nguyen, Min Xu, Qiang Wu, Dung D Le"
+    title="Enhancing News Recommendation with Graph and LLM Prompting"
+    img="/HGPrompt.png"
+    desc="Leverage power of LLMs with Graph"
     url="#"
-    badge="WWW2025"
+    badge="On-going"
     badgeCL="bg-green-600 text-white"
 
   />
-  <div class="divider my-0"></div>
-<HorizontalCard
-  title="Graph Multimodal Network for Emotion Classification in Incomplete Conversations"
-  img="/graph.jpg"
-  desc="Nguyen Thi Cam-Van, Hai-Dang Kieu, Duc-Trong Le, Quang-Thuy Ha. NeuroComputing (Q1), 2025."
-  url="#"
-  badge="NeuroComputing"
-  badgeCL="bg-green-600 text-white"
-  />
 
-<HorizontalCard
+  <HorizontalCard
   title="Keyword-driven Retrieval-Augmented LLMs for Cold-start Recommendations"
   img="/kalm4rec.png"
-  desc="Hai-Dang Kieu, Minh Duc Nguyen, Thanh-Son Nguyen, Dung D Le. WWW’25 Companion Proceedings."
+  desc="Using LLMs for ranking relevant items to Cold-start users."
   url="#"
-  badge="LLM4Ecommerce WWW2025"
+  badge="On-going"
   badgeCL="bg-green-600 text-white"
-  
 />
 
+  <div class="divider my-0"></div>
+
+
+
 <HorizontalCard
-  title="Graph Attention Network for Motor Imagery Classification"
+  title="Graph Attention Network for Motor Imagery Classification (2023-2024). Funded by CN-UET."
   img="/GAMI.png"
   desc="Hai-Dang Kieu"
   url="#"
-  badge="RIVF 2024"
+  badge="Finished"
   badgeCL="bg-orange-700 text-white"
     />
 
 <HorizontalCard
-  title="EEG & Eye-Tracking Dataset of ALS Patients for Spelling Systems"
+  title="EEG & Eye-Tracking Dataset of ALS Patients for Spelling Systems (2020-2023). Funded by VINIF."
   img="/EEGDATA.png"
-  desc="Ngo Thi Duyen, Hai-Dang Kieu, et al. Scientific Data, 2024."
+  desc="Thi Duyen Ngo, Hai Dang Kieu, Minh Hoa Nguyen, The Hoang-Anh Nguyen, Van Mao Can, Ba Hung Nguyen, Thanh Ha Le"
   url="#"
-  badge="Nature Scientific Dat"
+  badge="Finished"
   badgeCL="bg-orange-700 text-white"
 />
 
-
-<HorizontalCard
-  title="Gaze-Controlled On-Screen Keyboard for ALS Patients"
-  img="/EEGDATA.png"
-  desc="Nguyen Minh Hoa, Ngo Thi Duyen, Hai-Dang Kieu, et al."
-  url="#"
-  badge="Technology and Disability 2023"
-  badgeCL="bg-orange-700 text-white"
-/>
-
-<HorizontalCard
-  title="Structural Compact Latent Learning in Sparse Reward Environments"
-  img="/post_img.webp"
-  desc="Le Bang Giang, Hoang Thi Linh, Hai-Dang Kieu, Ta Viet Cuong."
-  url="#"
-  badge="ACIIDS 2023"
-  badgeCL="bg-orange-700 text-white"
-/>
-
-
-<HorizontalCard
-  title="GAT-FP: Imperfect Multimodal Learning via Graph Attention"
-  img="/gatfp.jpg"
-  desc="Nguyen Van Doan, Nguyen Trong Duc, Hai-Dang Kieu*, et al."
-  url="#"
-  badge="SoICT 2023"
-  badgeCL="bg-orange-700 text-white"
-/>
-
-<HorizontalCard
-  title="Locally Weighted PCA for Missing Marker Recovery"
-  img="/post_img.webp"
-  desc="Hai-Dang Kieu, Yu Hongchuan, Zhang Jian Jun, Li Zhuorong."
-  url="#"
-  badge="PLoS ONE  2022"
-  badgeCL="bg-orange-700 text-white"
-/>
-
-<HorizontalCard
-  title="PCA-Based Robust Motion Recovery"
-  img="/post_img.webp"
-  desc="Li Zhuorong, Yu Hongchuan, Hai-Dang Kieu, et al."
-  url="#"
-  badge="IEEE ACCESS 2020"
-  badgeCL="bg-orange-700 text-white"
-/>
-
-<HorizontalCard
-  title="Multitask Reinforcement Learning Experience Sharing"
-  img="/post_img.webp"
-  desc="Vuong Tung-Long, Nguyen Do-Van, Hai-Dang Kieu, et al. IJCAI 2019."
-  url="#"
-  badge="IJCAI 2019"
-  badgeCL="bg-orange-700 text-white"
-/>
-
-<HorizontalCard
-  title="Vision Memory for Navigation with Deep RL"
-  img="/post_img.webp"
-  desc="Nguyen Do-Van, Vuong Tung-Long, Hai-Dang Kieu, et al. IEEE SMC 2018."
-  url="#"
-  badge="IEEE SMC 2018"
-  badgeCL="bg-orange-700 text-white"
-/>
 
 </BaseLayout>
