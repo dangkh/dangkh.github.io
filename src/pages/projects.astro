@@ -21,9 +21,27 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   </div>
 
   <HorizontalCard
+    title="CoMemTree: Collaborative Behaviour Memory for LLM-based Sequential Recommendation"
+    img="/comemtree.png"
+    desc="An LLM ranker scores a user's next item from two kinds of behaviour evidence: WHAT the user currently prefers (the semantic behaviour of the latest interaction window) and HOW that preference is expected to evolve, predicted by a collaborative tree learned from the behaviour sequences of training users. Behaviour memories are extracted once offline, and inference needs only one ranking call per user. Evaluated on Amazon CDs, Video Games and MovieLens-1M."
+    url="https://github.com/dangkh/CMT"
+    badge="On-going"
+    badgeCL="bg-green-600 text-white"
+  />
+
+  <HorizontalCard
+    title="SCOPE: LLM-generated User Profiles for Graph-based Recommendation"
+    img="/scope.png"
+    desc="Combines LightGCN collaborative embeddings with LLM-generated user-preference summaries built from two views of each user: the full interaction history, and a filtered history with high-exposure (high-degree) items removed. A conflict-aware exposure gate uses the semantic discrepancy between the two summaries to control how the views are fused into the user representation, trained with BPR loss. Evaluated on Amazon Books, MovieLens and Yelp."
+    url="https://github.com/dangkh/scope"
+    badge="On-going"
+    badgeCL="bg-green-600 text-white"
+  />
+
+  <HorizontalCard
     title="LLM for Multimodal Recommendation"
     img="/LLMsurvey.png"
-    desc="Leverage power of LLMs for augmenting, generating embedding for Recsys"
+    desc="Leveraging the power of LLMs to augment data and generate embeddings for recommender systems."
     url="#"
     badge="On-going"
     badgeCL="bg-green-600 text-white"
@@ -34,7 +52,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <HorizontalCard
     title="Enhancing News Recommendation with Graph and LLM Prompting"
     img="/HGPrompt.png"
-    desc="Leverage power of LLMs with Graph"
+    desc="Leveraging the power of LLMs together with graph-based models."
     url="#"
     badge="On-going"
     badgeCL="bg-green-600 text-white"
@@ -44,7 +62,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <HorizontalCard
   title="Keyword-driven Retrieval-Augmented LLMs for Cold-start Recommendations"
   img="/kalm4rec.png"
-  desc="Using LLMs for ranking relevant items to Cold-start users."
+  desc="Using LLMs to rank relevant items for cold-start users."
   url="#"
   badge="Finished"
   badgeCL="bg-orange-700 text-white"
